@@ -18,7 +18,7 @@ namespace ToyotaFunctionApp
     public static class ToyotaVehicleRequest
     {
         [OpenApiOperation(operationId: nameof(GetVehicleRequest),Visibility = OpenApiVisibilityType.Important)]
-        [OpenApiResponseWithBody(HttpStatusCode.OK,"application/json",typeof(VehicleOBJ[]))]
+        [OpenApiResponseWithBody(HttpStatusCode.OK,"application/json",typeof(VehicleOBJ))]
         //add swagger
         
         [FunctionName(nameof(GetVehicleRequest))]
