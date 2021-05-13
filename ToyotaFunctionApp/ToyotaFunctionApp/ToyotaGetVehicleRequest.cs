@@ -26,6 +26,8 @@ namespace ToyotaFunctionApp
         public static async Task<IActionResult> GetVehicleRequest(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             ILogger log)
+
+            //this is the http trigger
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
